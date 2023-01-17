@@ -76,5 +76,6 @@ function createMarkup (arr){
 // function clearInput(){
 //     countryListEl.remove();
 //     countryInfoEl.remove();
+//     console.log('test');
 // };
 
