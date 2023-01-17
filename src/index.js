@@ -73,8 +73,8 @@ function createMarkup (arr){
         // arr.map(country => console.log(country.flags.svg, country.name, country.capital, country.population, country.language))
     };
 }
-function clearInput(){
-    countryListEl.remove();
-    countryInfoEl.remove();
-};
+// function clearInput(){
+//     countryListEl.remove();
+//     countryInfoEl.remove();
+// };
 
