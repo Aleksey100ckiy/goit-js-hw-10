@@ -24,6 +24,7 @@ saerchEl.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
 function onInput(e){
     e.preventDefault();
+    clearInput();
     let search = saerchEl.value;
     // console.log(search);
     fetchCountries(search)
@@ -73,9 +74,10 @@ function createMarkup (arr){
         // arr.map(country => console.log(country.flags.svg, country.name, country.capital, country.population, country.language))
     };
 }
-// function clearInput(){
-//     countryListEl.remove();
-//     countryInfoEl.remove();
-//     console.log('test');
-// };
+function clearInput(){
+    let empty = '';
+    countryListEl.innerHTML = empty;
+    countryInfoEl.innerHTML = empty
+
+};
 
